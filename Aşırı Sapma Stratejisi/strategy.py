@@ -106,7 +106,7 @@ while True:
 
         # STOP LOSS
         if longPozisyonda and ((float(df["close"][len(df.index)-1]) - float(position_bilgi["entryPrice"][len(position_bilgi.index) - 1])) / float(position_bilgi["entryPrice"][len(position_bilgi.index) - 1])) * 100 * -1 >= float(stopLoss):
-            print ("LONG İŞLEMDEN KAR İLE ÇIKILIYOR...")
+            print ("LONG İŞLEMDEN ZARAR İLE ÇIKILIYOR...")
             longExit()
             baslik = symbol
             message = "LONG EXIT (STOP LOSS)\n" + "Toplam Para: " + str(balance['total']["USDT"])
